@@ -21,6 +21,7 @@ dns:
         name: "Office 365"
         words:
           - "mail.protection.outlook.com"
+          - ".mx.microsoft"
 
       - type: word
         name: "Google Apps"
