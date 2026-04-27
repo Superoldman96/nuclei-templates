@@ -1,0 +1,30 @@
+id: device42-panel
+
+info:
+  name: Device42 Panel - Detect
+  author: righettod
+  severity: info
+  description: |
+     Device42 was detected — a Discovery, Asset Management and Dependency Mapping for Data Center and Cloud
+  reference:
+    - https://www.device42.com/
+  metadata:
+    verified: true
+    max-request: 2
+    shodan-query: http.title:"device42"
+  tags: panel,device42,login,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/admin/login/?next=/"
+      - "{{BaseURL}}/"
+      
+    stop-at-first-match: true
+
+    matchers:
+      - type: dsl
+        dsl:
+          - 'status_code == 200'
+          - 'contains_any(to_lower(body), "device42</title>", "<title>device42")'
+        condition: and
