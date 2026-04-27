@@ -1,7 +1,7 @@
 id: claris-filemaker-admin-console
 
 info:
-  name: Claris FileMaker Server Admin Console Panel - Detect
+  name: Claris FileMaker Server Admin Console - Detect
   author: s4e-io
   severity: info
   description: Claris FileMaker Server Admin Console panel was detected.
@@ -16,10 +16,10 @@ info:
     max-request: 1
     vendor: claris
     product: filemaker_server
-    shodan-query: http.title:"Claris FileMaker Server Admin Console"
-    fofa-query: title="Claris FileMaker Server Admin Console"
-    google-query: intitle:"Claris FileMaker Server Admin Console"
-  tags: panel,filemaker,claris,discovery
+    shodan-query: title:"Claris FileMaker "
+    fofa-query: title="Claris FileMaker"
+    google-query: intitle:"Claris FileMaker"
+  tags: panel,filemaker,claris,detect
 
 http:
   - method: GET
@@ -32,11 +32,6 @@ http:
         part: body
         words:
           - '<title>Claris FileMaker Server Admin Console</title>'
-
-      - type: word
-        part: header
-        words:
-          - 'text/html'
 
       - type: status
         status:
