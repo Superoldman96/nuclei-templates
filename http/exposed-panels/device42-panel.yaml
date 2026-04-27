@@ -5,7 +5,7 @@ info:
   author: righettod
   severity: info
   description: |
-     Device42 was detected — a Discovery, Asset Management and Dependency Mapping for Data Center and Cloud
+     Device42 was detected — a Discovery, Asset Management and Dependency Mapping for Data Center and Cloud.
   reference:
     - https://www.device42.com/
   metadata:
@@ -19,7 +19,7 @@ http:
     path:
       - "{{BaseURL}}/admin/login/?next=/"
       - "{{BaseURL}}/"
-      
+
     stop-at-first-match: true
 
     matchers:
