@@ -44,7 +44,6 @@ http:
           - "IMAP Error:"
           - "Message for"
           - "DB Error:"
-          - "IMAP Error:"
           - "PHP Error:"
           - "PHP Warning:"
         condition: or
