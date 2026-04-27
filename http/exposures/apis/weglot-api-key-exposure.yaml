@@ -1,0 +1,42 @@
+id: weglot-api-key-exposure
+
+info:
+  name: Weglot API Key Exposed in JavaScript
+  author: 0x_Akoko
+  severity: medium
+  description: |
+    Detected Weglot API key was found exposed in a publicly accessible JavaScript file.
+  reference:
+    - https://developers.weglot.com/api/authentication
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+    cvss-score: 6.5
+    cwe-id: CWE-200
+  metadata:
+    verified: true
+    max-request: 2
+    fofa-query: body="/scripts/weglot.js" || body="/js/weglot.js" || body="Weglot.initialize" && body="api_key"
+  tags: exposure,weglot,api-key,secret,js,misconfig
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/scripts/weglot.js"
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        part: header
+        words:
+          - "application/javascript"
+          - "text/javascript"
+        condition: or
+
+      - type: regex
+        part: body
+        regex:
+          - "Weglot\\.initialize\\s*\\([\\s\\S]*?api_key\\s*:\\s*['\"]?(wg_[a-f0-9]{32,40})"
