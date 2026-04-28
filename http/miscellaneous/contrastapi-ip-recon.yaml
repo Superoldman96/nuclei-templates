@@ -73,6 +73,16 @@ http:
           - '.cloud_provider'
 
       - type: json
+        name: is_datacenter
+        json:
+          - '.is_datacenter'
+
+      - type: json
+        name: firehol_listed
+        json:
+          - '.reputation.firehol.listed'
+
+      - type: json
         name: tor_exit
         json:
           - '.tor_exit'
