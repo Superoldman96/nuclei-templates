@@ -960,8 +960,8 @@ code/windows/enumeration/rdp-ntlm-info.yaml:a4e4ee99b93ce4d060d0e525bf8a4d6c6f15
 code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731821fba65d8bd4
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:362462fcd69214ad2fc765d007d8ac58dfe38344
-cves.json:ce3d47849e9add8d544393fd44961bef035eef88
-cves.json-checksum.txt:b313fc5c525281ac0a2465fa7438097729744dfa
+cves.json:fb4ae4202dec3c79cb8b630790c34fd6efde27fb
+cves.json-checksum.txt:5fccd99c13ac4906a68118aa71a522abbda658a0
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -5948,6 +5948,7 @@ http/cves/2026/CVE-2026-1296.yaml:eb073410e5456fe24f0febf8456d1eb0a0a80cf0
 http/cves/2026/CVE-2026-1306.yaml:af61a0ed98f93e98eaf0ce4d65bb5dc532b246e3
 http/cves/2026/CVE-2026-1314.yaml:aad5621a9d91b2bb7188312b59d4b4a4225e5d08
 http/cves/2026/CVE-2026-1357.yaml:a8283d5935d394a881b320d6aa971b15cbf85e14
+http/cves/2026/CVE-2026-1368.yaml:7e9a6a931e5cbee0ce0d479292d992ccd3008fe9
 http/cves/2026/CVE-2026-1405.yaml:bbde0dd065252e34919e45a3d0933f9d2dbf4064
 http/cves/2026/CVE-2026-1492.yaml:043035694fb303c264ed03f6d6f3dd8c9ce1d9e6
 http/cves/2026/CVE-2026-1557.yaml:79a2ff6cf134b10a7ddbc6b413c9d04f9536458f
@@ -13165,7 +13166,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:764a691622b957238fd06d52a77ce34b9c44c624
+templates-checksum.txt:265f9905a468e6b2715cb139f1b95bf851bc77bf
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
