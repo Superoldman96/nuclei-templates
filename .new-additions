@@ -81,4 +81,5 @@ javascript/enumeration/perforce-user-enum.yaml
 javascript/misconfiguration/perforce-passwordless-users.yaml
 javascript/misconfiguration/perforce-remote-depot-unauth.yaml
 javascript/udp/misconfiguration/mdns-ptzoptics-detect.yaml
+network/cves/2026/CVE-2026-42167.yaml
 network/detection/perforce-detect.yaml
