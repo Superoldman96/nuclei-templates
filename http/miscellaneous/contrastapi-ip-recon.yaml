@@ -105,3 +105,4 @@ http:
         name: vuln_severities
         json:
           - '.vulns[].severity'
+# digest: 490a0046304402204971caf35165ce79924f1f7716c439bd1cfb3081cc0b204b2eb3639ec2ae939102206cc52915b416d40f1feb534e22e5dabed7b7a7a2321a7566ed3519c37b46d193:922c64590222798bb761d5b6d8e72950
