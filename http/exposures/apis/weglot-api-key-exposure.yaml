@@ -1,7 +1,7 @@
 id: weglot-api-key-exposure
 
 info:
-  name: Weglot API Key Exposed in JavaScript
+  name: Weglot API Key - Exposed
   author: 0x_Akoko
   severity: medium
   description: |
@@ -31,6 +31,6 @@ http:
 
     extractors:
       - type: regex
+        part: body
         regex:
           - 'wg_[a-f0-9]{32,40}'
-        part: body
